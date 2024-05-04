@@ -114,7 +114,7 @@ public class CheetahSearchApi {
                         + bookLink;
 
         //return the message
-        return message;
+        return message;  
     }
 
     public void setWebClient(WebClient webClient) {

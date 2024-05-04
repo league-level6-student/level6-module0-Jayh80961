@@ -10,10 +10,10 @@ public class Source {
 	private String id;
 	@SerializedName("name")
 	@Expose
-	private String name;
-
+	private String name; 
+	
 	public String getId() {
-	return id;
+	return id; 
 	}
 
 	public void setId(String id) {

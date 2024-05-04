@@ -69,26 +69,26 @@ public class NewsApi {
                 .retrieve()
                 .bodyToMono(ApiExampleWrapper.class);
 
-        return apiExampleWrapperMono.block();
+        return apiExampleWrapperMono.block(); 
     }
 
     public String findStory(String topic){
 
         //Get a story from News API
-        ApiExampleWrapper apiExampleWrapper = getNewsStoryByTopic(topic);
+        ApiExampleWrapper apiExampleWrapper = getNewsStoryByTopic(topic); 
 
         //Get the first article
-        Article article = apiExampleWrapper.getArticles().get(0);
+        Article article = apiExampleWrapper.getArticles().get(0); 
+        
+        //Get the title of the article 
+        String articleTitle = article.getTitle(); 
 
-        //Get the title of the article
-        String articleTitle = article.getTitle();
-
-        //Get the content of the article
+        //Get the content of the article  
         String articleContent = article.getContent();
 
         //Get the URL of the article
         String articleUrl = article.getUrl();
-
+        
         //Create the message
         String message =
                 articleTitle + " -\n"

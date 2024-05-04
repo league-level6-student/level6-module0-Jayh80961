@@ -14,11 +14,11 @@ to throw that exception.
 
 As an aside, it would be bad practice to write a single unit test that verifies the happy path, as well as test that an
 exception is thrown when a certain value is invalid.  This scenario is an example of when a "unit" of code is actually
-only part of a method.
+only part of a method. 
 
 In the above scenarios, we want to engage in white-box testing.  White-box testing allows us to examine what the method
 does when it is invoked, rather than simply taking a look at what it returns.  We will now look at some additional
-unit testing syntax that allows us to verify that specific things occurred when the method was called.
+unit testing syntax that allows us to verify that specific things occurred when the method was called. 
 
 
 Before moving on to the next section, please familiarize yourself with the following code:

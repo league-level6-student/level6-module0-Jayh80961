@@ -19,15 +19,26 @@ class LeagueOfAmazingAstronautsTest {
 
     LeagueOfAmazingAstronauts underTest = new LeagueOfAmazingAstronauts();
 
+    @Mock
+    Rocketship rocketship;
+
+    @Mock
+    Astronaut astronaut;
+
     @BeforeEach
     void setUp() {
-
+        MockitoAnnotations.initMocks(this);
+        when(rocketship.isLoaded()).thenReturn(true);
+        when(rocketship.getAstronaut()).thenReturn(astronaut);
+        when(astronaut.isTrained()).thenReturn(true); 
     }
+
 
     @Test
     void itShouldPrepareAstronaut() {
         //given
-
+    	
+    	
         //when
 
         //then

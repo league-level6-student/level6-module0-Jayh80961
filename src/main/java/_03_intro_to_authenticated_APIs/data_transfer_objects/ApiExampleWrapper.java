@@ -15,7 +15,7 @@ public class ApiExampleWrapper {
 	@SerializedName("articles")
 	@Expose
 	private List<Article> articles = null;
-
+	
 	public String getStatus() {
 	return status;
 	}
@@ -23,11 +23,11 @@ public class ApiExampleWrapper {
 	public void setStatus(String status) {
 	this.status = status;
 	}
-
+	
 	public Integer getTotalResults() {
-	return totalResults;
+	return totalResults; 
 	}
-
+	
 	public void setTotalResults(Integer totalResults) {
 	this.totalResults = totalResults;
 	}
